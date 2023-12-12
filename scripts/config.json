@@ -1,0 +1,94 @@
+{
+    "machines": [
+        {
+            "name": "integra",
+            "ip": "127.0.0.1",
+            "ports": {
+                "peer0_port":7051,
+                "peer1_port":8051,
+                "orderer_1_port":7050    
+            },
+            "couchDbCreds":{
+                "couch_peer1":{
+                    "user_name":"integraAdmin",
+                    "password":"integraAdminpw"
+                },
+                "couch_peer2":{
+                    "user_name":"integraAdmin",
+                    "password":"integraAdminpw"
+                }
+               
+            }
+        },
+        {
+            "name": "bcp",
+            "ip": "127.0.0.1",
+            "ports": {
+                "peer0_port":9051,
+                "peer1_port":10051,
+                "orderer_1_port":8050
+                
+            },
+            "couchDbCreds":{
+                "couch_peer1":{
+                    "user_name":"bcpAdmin",
+                    "password":"bcpAdminpw"
+                },
+                "couch_peer2":{
+                    "user_name":"bcpAdmin",
+                    "password":"bcpAdminpw"
+                }
+               
+            }
+        },
+        {
+            "name": "esp",
+            "ip": "127.0.0.1",
+            "ports": {
+                "peer0_port":11051,
+                "peer1_port":12051,
+                "orderer_1_port":9050
+                
+            },
+            "couchDbCreds":{
+                "couch_peer1":{
+                    "user_name":"espAdmin",
+                    "password":"espAdminpw"
+                },
+                "couch_peer2":{
+                    "user_name":"espAdmin",
+                    "password":"espAdminpw"
+                }
+               
+            }
+        },
+        {
+            "name": "broker",
+            "ip": "127.0.0.1",
+            "ports": {
+                "peer0_port":13051,
+                "peer1_port":14051,
+                "orderer_1_port":10050
+                
+            },
+            "couchDbCreds":{
+                "couch_peer1":{
+                    "user_name":"brokerAdmin",
+                    "password":"brokerAdminpw"
+                },
+                "couch_peer2":{
+                    "user_name":"brokerAdmin",
+                    "password":"brokerAdminpw"
+                }
+               
+            }
+        },
+        {
+            "name": "explorer",
+            "user_name":"integraadmin",
+            "password":"integra@dmin."
+
+        }                         
+    ]
+}    
+
