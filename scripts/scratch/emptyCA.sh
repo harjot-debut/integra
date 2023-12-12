@@ -1,0 +1,1 @@
+sudo rm -rf ${PWD}/../docker-compose-ca/integra/fabric-ca/msp ${PWD}/../docker-compose-ca/integra/fabric-ca/IssuerPublicKey ${PWD}/../docker-compose-ca/integra/fabric-ca/IssuerRevocationPublicKey ${PWD}/../docker-compose-ca/integra/fabric-ca/tls-cert.pem ${PWD}/../docker-compose-ca/integra/fabric-ca/ca-cert.pem ${PWD}/../docker-compose-ca/integra/fabric-ca/fabric-ca-server.db
