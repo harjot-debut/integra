@@ -3,7 +3,7 @@ version: '2'
 
 networks:
   netname:
-    name: osqo-methodbridge 
+    name: integra-network
 
 services:
 

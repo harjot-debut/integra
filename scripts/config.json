@@ -2,7 +2,7 @@
     "machines": [
         {
             "name": "integra",
-            "ip": "127.0.0.1",
+            "ip": "18.217.52.1",
             "ports": {
                 "peer0_port":7051,
                 "peer1_port":8051,

@@ -1,6 +1,10 @@
+
 #!/bin/bash
 
+# set -e
 . envVar.sh
+
+
 
 if [[ $# -lt 1 ]] ; then
   warnln "Invalid Command"
@@ -175,7 +179,7 @@ function GenerateMsp(){
 
   set -x
   fabric-ca-client enroll -u https://peer0:peer0pw@localhost:$2 --caname ca-$1 -M ${PWD}/../organizations/peerOrganizations/$1.integra.com/peers/peer0.$1.integra.com/msp --csr.hosts peer0.$1.integra.com --tls.certfiles ${PWD}/../docker-compose-ca/$1/fabric-ca/tls-cert.pem
-  { set +x; } 2>/dev/
+  { set +x; } 2>/dev//null
   
 
   cp ${PWD}/../organizations/peerOrganizations/$1.integra.com/msp/config.yaml ${PWD}/../organizations/peerOrganizations/$1.integra.com/peers/peer0.$1.integra.com/msp/config.yaml

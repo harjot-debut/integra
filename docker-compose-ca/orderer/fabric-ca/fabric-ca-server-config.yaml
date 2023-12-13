@@ -309,7 +309,7 @@ signing:
 #  if the server creates a self-signed TLS certificate.
 ###########################################################################
 csr:
-   cn: ca.orderer.osqo.com
+   cn: ca.orderer.integra.com
    keyrequest:
      algo: ecdsa
      size: 256
@@ -317,11 +317,13 @@ csr:
       - C: AU
         ST: "New South Wales"
         L: Sydney
-        O: orderer.osqo.com
+        O: orderer.integra.com
         OU:
    hosts:     
      - localhost
-     - orderer.osqo.com
+     - 13.59.243.154
+     - 18.217.52.1
+     - orderer.integra.com
    ca:
       expiry: 262800h
       pathlength: 1

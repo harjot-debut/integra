@@ -321,6 +321,8 @@ csr:
         OU:
    hosts:     
      - localhost
+     - 13.59.243.154
+     - 18.217.52.1
      - integra.integra.com
    ca:
       expiry: 262800h
